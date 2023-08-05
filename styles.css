@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+body {
+    font-family: 'Kankit', sans-serif;
+    background-color: #242331;
+    color: #DDCA7D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#demo {
+    font-size: 20vh;
+}
