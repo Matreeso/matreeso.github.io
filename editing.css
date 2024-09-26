@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+html, body {
+    margin: 0;
+}
+
+h1 {
+    color: #D3D5D7;
+    text-shadow: -1px 1px 0 #000,
+				  1px 1px 0 #000,
+				 1px -1px 0 #000;
+    font-size: 50px;
+    text-align: center;
+}
+
+body {
+    background-color: #CF5C36;
+    font-family: 'Kanit', sans-serif;
+}
+
+.channel {
+    margin: 1vw;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.5);
+    padding: 8px;
+    height: 50vh;
+}
+
+#aboutMe {
+    height: 100%;
+    min-height: 355px;
+    font-size: 35px;
+    padding: 20px;
+    margin: 2vw;
+    color: #EFC88B;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.5);
+    background-color: #CF5C36;
+    text-align: center;
+}
+
+.thing {
+    display: flex;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #F4E3B2;
+}
+
+.vids {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+iframe {
+    padding: 8px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.5);
+    height: 50vh;
+}
+
+p.backBtn {
+    font-size: 30px;
+    font-weight: 900;
+    color: #EFC88B;
+    margin: 5px;
+}
+
+div.backBtn{
+    transition: all .2s ease-in;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    background-color: #050517;
+    width: 10vw;
+    border-radius: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+div.backBtn:hover {
+    transition: all .2s ease-in;
+    box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.5);
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}

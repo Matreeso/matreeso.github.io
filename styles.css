@@ -1,21 +1,115 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
-body {
-    font-family: 'Kankit', sans-serif;
-    background-color: #242331;
-    color: #DDCA7D;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
+html, body {
+    margin: 0;
 }
 
-body::-webkit-scrollbar {
+h1 {
+    color: #D3D5D7;
+    text-shadow: -1px 1px 0 #000,
+				  1px 1px 0 #000,
+				 1px -1px 0 #000;
+    font-size: 50px;
+    text-align: center;
+}
+
+body {
+    background-color: #CF5C36;
+    font-family: 'Kanit', sans-serif;
+}
+
+.pfp {
+    margin: 1vw;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    width: 25vw;
+}
+
+#aboutMe {
+    height: 100%;
+    min-height: 355px;
+    font-size: 35px;
+    padding: 20px;
+    margin: 2vw;
+    color: #EFC88B;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.5);
+    background-color: #CF5C36;
+    text-align: center;
+}
+
+.thing {
+    display: flex;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #F4E3B2;
+}
+
+#img1 {
+    object-fit: cover;
+    width: 30vw;
+    height: 15vw;
+    border-radius: 5px;
+    border: 10px solid #D3D5D7;
+    box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.5);
+    margin-left: 10px;
+}
+
+.SARPBC:hover {
+    transition: all .2s ease-in;
+    transform: scale(1.05);
+}
+
+.SARPBC {
+    transition: all .13s ease-in;
+    font-size: 30px;
+    font-weight: 900;
+    color: #EFC88B;
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 7vh;
+}
+
+.projectSection{
+    background-color: #050517;
+    width: 100%;
+}
+
+.projectSection:-webkit-scrollbar {
     display: none;
 }
 
-#demo {
-    font-size: 20vh;
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.classList {
+    background-color: #F4E3B2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.period {
+    width: 10vw;
+    height: 10vh;
+    background-color: #b5a884;
+    display: flex;
+    justify-content: space-around;
+    font-size: 3vh;
+    border-radius: 7px;
+    box-shadow: 0px 0px 7px -1px rgba(0, 0, 0, 0.5);
+}
+
+#deez {
+    color: #050517;
 }
