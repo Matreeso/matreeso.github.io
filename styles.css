@@ -1,115 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
-
-html, body {
-    margin: 0;
-}
-
-h1 {
-    color: #D3D5D7;
-    text-shadow: -1px 1px 0 #000,
-				  1px 1px 0 #000,
-				 1px -1px 0 #000;
-    font-size: 50px;
-    text-align: center;
-}
-
 body {
-    background-color: #CF5C36;
-    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-.pfp {
-    margin: 1vw;
-    border-radius: 30px;
-    box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.5);
-    padding: 5px;
-    width: 25vw;
-}
-
-#aboutMe {
-    height: 100%;
-    min-height: 355px;
-    font-size: 35px;
-    padding: 20px;
-    margin: 2vw;
-    color: #EFC88B;
-    border-radius: 5px;
-    box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.5);
-    background-color: #CF5C36;
-    text-align: center;
-}
-
-.thing {
+.section {
+    height: 100vh; /* Each section takes full viewport height */
     display: flex;
-    border-radius: 5px;
+}
+
+.scroll-arrow {
+    position: fixed; /* Fixes the position relative to the viewport */
+    bottom: 20px; /* Distance from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to center */
+    font-size: 30px; /* Size of the arrow */
+    color: white; /* Color of the arrow */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for visibility */
+    border-radius: 5px; /* Slightly round edges */
+    padding: 10px; /* Padding around the arrow */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background 0.3s ease; /* Transition for background color */
+    z-index: 100; /* Make sure the arrow is on top */
+}
+
+.scroll-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darken background on hover */
+}
+
+.container {
+    display: flex;
+    height: 100%; /* Full height of the section */
+}
+
+.text-section {
+    width: 40%;
+    background-color: #CF5C36; /* Set the background to #CF5C36 */
+    padding: 20px;
+    color: white; /* Text color for readability */
+}
+
+.gallery-section {
+    width: 60%;
+    background-color: #242331; /* Set the background to #242331 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.5s ease, height 0.5s ease;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    transition: width 0.5s ease, height 0.5s ease, opacity 0.5s ease;
+    opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+/* Arrows with a larger clickable area */
+.prev, .next {
+    cursor: pointer;
+    font-size: 24px;
+    user-select: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px; /* Set width of the clickable area */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.0); /* Optional background for visual feedback */
+    transition: background 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+    transition: all .2s ease-in;
+    transform: scale(1.5);
+    background: rgba(0, 0, 0, 0.0); /* Darken the background on hover for feedback */
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev, .next {
+    transition: all .25s ease-in;
+    color: white;
+}
+
+/* Additional styles for headings and about me text */
+.about-me {
+    font-size: 5vh;
 }
 
 h2 {
-    text-align: center;
-    font-size: 40px;
-    color: #F4E3B2;
-}
-
-#img1 {
-    object-fit: cover;
-    width: 30vw;
-    height: 15vw;
-    border-radius: 5px;
-    border: 10px solid #D3D5D7;
-    box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.5);
-    margin-left: 10px;
-}
-
-.SARPBC:hover {
-    transition: all .2s ease-in;
-    transform: scale(1.05);
-}
-
-.SARPBC {
-    transition: all .13s ease-in;
-    font-size: 30px;
+    font-size: 7vh;
+    text-shadow: -1px 3px 25px rgba(128, 0, 0, 0.42);
     font-weight: 900;
-    color: #EFC88B;
-    text-align: center;
-}
-
-.projects {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 7vh;
-}
-
-.projectSection{
-    background-color: #050517;
-    width: 100%;
-}
-
-.projectSection:-webkit-scrollbar {
-    display: none;
-}
-
-body::-webkit-scrollbar{
-    display: none;
-}
-
-.classList {
-    background-color: #F4E3B2;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.period {
-    width: 10vw;
-    height: 10vh;
-    background-color: #b5a884;
-    display: flex;
-    justify-content: space-around;
-    font-size: 3vh;
-    border-radius: 7px;
-    box-shadow: 0px 0px 7px -1px rgba(0, 0, 0, 0.5);
-}
-
-#deez {
-    color: #050517;
 }

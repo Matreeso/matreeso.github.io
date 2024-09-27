@@ -2,84 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <h1>Saad Bajwa</h1>
-    
-    <div class="thing">
-        <p id="aboutMe">Hi, my name is Saad Bajwa. I am currently an 11th grader at Mountain House High School. 
-            My academic interets are computer science and mathematics. 
-            I plan to pursue these interests at a university part of the UC system. 
-            Outside of school I spend my time playing video games, making video games, 
-            editing videos, playing basketball/football with friends, or helping out with the Youth Action Committee.</p>
+    <div class="section" id="section1">
+        <div class="container">
+            <div class="text-section">
+                <h2>A Little Bit About Me</h2>
+                <p class="about-me">Hi, my name is Saad Bajwa. I am currently studying computer science at SJSU. I am constantly 
+                working outside of school to improve my skills and to learn new things that can help me to 
+                succeed in this field. Outside of school I like to spend time working with my dad to fix my car, 
+                play videogames, and hang out with family/friends.</p>
+            </div>
+            <div class="gallery-section">
+                <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+                <div class="gallery-container" id="gallery-container">
+                    <img id="gallery-image" src="/assets/ezgif-4-3acfab0be7.gif" alt="Gallery Image">
+                </div>
+                <span class="next" onclick="changeImage(1)">&#10095;</span>
+            </div>
+        </div>
+        <div class="scroll-arrow" onclick="scrollToNextSection()">
+            &#8595; <!-- Downward arrow -->
+        </div>
     </div>
 
-
-    <div class="projectSection">
-        <h2>My Projects</h2>
-
-        <div class="projects">
-            <div class="SARPBC">
-                <img id="img1" src="SARPBC.png">
-                <p>SARPBC</p>
-            </div>
-            <div class="SARPBC">
-                <img id="img1" src="player.png">
-                <p>Player Stats</p>
-            </div>
-            <div class="SARPBC">
-                <img id="img1" src="memory.png">
-                <p>Memory Game</p>
-            </div>
+    <div class="section" id="section2">
+        <div class="text-section">
+            <h2>My Projects</h2>
+            <p>Flying Car VR Showcase</p>
         </div>
-
-        <div class="projects">
-            <div class="SARPBC">
-                <img id="img1" src="pc.png">
-                <p>PC Building</p>
+        <div class="gallery-section">
+            <span class="prev" onclick="changeImage(-1, 1)">&#10094;</span>
+            <div class="gallery-container" id="gallery-container-2">
+                <img id="gallery-image-2" src="/assets/flyCarGalleryImage.png" alt="Gallery Image 2">
             </div>
-            <div class="SARPBC">
-                <a href="editing.html"><img id="img1" src="editing.gif"></a>
-                <p>Video Editing</p>
-            </div>
-            <div class="SARPBC">
-                <img id="img1" src="3d.png">
-                <p>3D Modeling/Animation</p>
-            </div>
-        </div>  
+             <span class="next" onclick="changeImage(1, 1)">&#10095;</span>
+        </div>
     </div>
 
-
-    <div class="classList">
-        <h2 id="deez">My Current Classes</h2>
-
-        <div class="period">
-            <p>AP Lang</p>
+    <div class="section" id="section3">
+        <div class="text-section">
+            <h2>Contact Me</h2>
+            <p>You can reach me at...</p>
         </div>
-        <div class="period">
-            <p>AP CSA</p>
+        <div class="gallery-section">
         </div>
-        <div class="period">
-            <p>AP Calc AB</p>
-        </div>
-        <div class="period">
-            <p>APUSH</p>
-        </div>
-        <div class="period">
-            <p>Physics H</p>
-        </div>
-        <div class="period">
-            <p>Spanish 3</p>
-        </div>
-        <div class="period">
-            <p>Digital Arts</p>
-        </div>
-
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
