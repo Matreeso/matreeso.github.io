@@ -7,9 +7,9 @@ const gallery1Images = [
 
 // Gallery 2 Images
 const gallery2Images = [
-    { src: '/assets/milestoneHome.png', width: '600px', height: '400px' },
+    { src: '/assets/flyCarGalleryImage.png', width: '600px', height: '400px' },
     { src: '/assets/f1Screenshot.png', width: '600px', height: '400px' },
-    { src: '/assets/IMG_8007.JPG', width: '500px', height: '350px' }
+    { src: '/assets/milestoneHome.png', width: '600px', height: '400px' }
 ];
 
 let currentGalleryIndex = 0; // 0 for Gallery 1, 1 for Gallery 2
